@@ -1,8 +1,8 @@
 import type { Filters, Page, SortKey } from '../types'
 import { normalizeResponse } from './normalize'
 
-/** Same-origin proxy (public/api/freeserp.php): FreeSERP's duplicated CORS header blocks direct browser calls. */
-const ENDPOINT = 'api/freeserp.php'
+/** Same-origin proxy: FreeSERP's duplicated CORS header blocks direct browser calls. */
+const ENDPOINT = '/api/freeserp'
 export const PAGE_SIZE = 24
 /** FreeSERP Main allows `from` up to 10,000. */
 export const MAX_OFFSET = 10_000

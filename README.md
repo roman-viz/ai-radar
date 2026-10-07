@@ -13,10 +13,9 @@ npm run typecheck && npm run lint && npm run build
 
 ## FreeSERP proxy
 
-FreeSERP sends a duplicated CORS header, so browsers cannot call it directly. The app calls a small same-origin proxy,
-which forwards only validated parameters. On Vercel, `api/freeserp.ts` is an Edge Function and `vercel.json` routes
-the existing `/api/freeserp.php` client URL to it. Other PHP-enabled hosts can continue using
-`public/api/freeserp.php`; it requires PHP with cURL.
+FreeSERP sends a duplicated CORS header, so browsers cannot call it directly. The app calls a small same-origin proxy
+at `/api/freeserp`, which forwards only validated parameters. On Vercel, this is the Edge Function in `api/freeserp.ts`.
+Other PHP-enabled hosts can use `public/api/freeserp.php`; it requires PHP with cURL.
 
 ## Deploy
 

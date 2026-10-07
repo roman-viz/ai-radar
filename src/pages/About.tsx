@@ -53,9 +53,9 @@ export function About() {
             <span className="sr-only"> (opens in a new tab)</span>
           </a>{' '}
           — no API key, no sign-up, and no local database. AI Radar queries the <code>sites</code> index restricted to AI
-          products, so on Explore, search, filters and sorting are all answered by FreeSERP itself. Requests pass through a tiny relay on
-          this server, because FreeSERP’s duplicated CORS header stops browsers from calling it directly; the relay only
-          forwards validated search parameters.
+          products, so on Explore, search, filters and sorting are all answered by FreeSERP itself. Requests pass through a
+          same-origin API relay because FreeSERP’s duplicated CORS header stops browsers from calling it directly; the
+          relay only forwards validated search parameters.
         </p>
         <p>
           Summaries are written automatically from each homepage. “Domain Rating” is FreeSERP’s 0–100 authority
