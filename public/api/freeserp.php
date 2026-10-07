@@ -94,9 +94,8 @@ if ($sort !== 'relevance') {
     $params['order'] = $order;
 }
 
-// Identify the application to FreeSERP, as their docs ask.
-$params['agent'] = 'AI-Radar-demo';
-$params['website'] = 'https://ws-99.ws.semalt.dev';
+// Identify the application to FreeSERP.
+$params['agent'] = 'AI-Radar';
 
 $ch = curl_init(UPSTREAM . '?' . http_build_query($params, '', '&', PHP_QUERY_RFC3986));
 curl_setopt_array($ch, [
@@ -106,7 +105,7 @@ curl_setopt_array($ch, [
     CURLOPT_FOLLOWLOCATION => false,
     CURLOPT_PROTOCOLS => CURLPROTO_HTTPS,
     CURLOPT_HTTPHEADER => ['Accept: application/json'],
-    CURLOPT_USERAGENT => 'AI-Radar-demo/1.0 (+https://ws-99.ws.semalt.dev)',
+    CURLOPT_USERAGENT => 'AI-Radar/1.0',
 ]);
 $body = curl_exec($ch);
 $status = (int) curl_getinfo($ch, CURLINFO_RESPONSE_CODE);

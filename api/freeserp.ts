@@ -55,8 +55,7 @@ export default async function handler(request: Request): Promise<Response> {
   const params = new URLSearchParams({
     index: 'sites',
     ai_startups: '1',
-    agent: 'AI-Radar-demo',
-    website: 'https://ws-99.ws.semalt.dev',
+    agent: 'AI-Radar',
   })
 
   try {
@@ -97,7 +96,7 @@ export default async function handler(request: Request): Promise<Response> {
     upstream = await fetch(`${UPSTREAM}?${params.toString()}`, {
       headers: {
         Accept: 'application/json',
-        'User-Agent': 'AI-Radar-demo/1.0 (+https://ws-99.ws.semalt.dev)',
+        'User-Agent': 'AI-Radar/1.0',
       },
       signal: AbortSignal.timeout(12_000),
     })

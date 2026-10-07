@@ -2,7 +2,7 @@ export function Footer() {
   return (
     <footer className="site-footer">
       <div className="container footer-inner">
-        <p>AI Radar — a small demo of API-powered AI website discovery.</p>
+        <p>AI Radar — discover AI websites and tools.</p>
         <p>
           Data from{' '}
           <a href="https://freeserp.ai/docs.php" target="_blank" rel="noopener noreferrer">

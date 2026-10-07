@@ -74,11 +74,11 @@ export function About() {
         </p>
       </section>
 
-      <section aria-labelledby="demo">
-        <h2 id="demo">A demonstration</h2>
+      <section aria-labelledby="about-ai-radar">
+        <h2 id="about-ai-radar">About AI Radar</h2>
         <p>
-          AI Radar is a demonstration of API-powered AI website discovery. Listings are automatically generated and are
-          not endorsements, so check any tool before relying on it.
+          AI Radar helps you discover AI websites and tools. Listings are automatically generated and are not
+          endorsements, so check any tool before relying on it.
         </p>
         <a className="btn btn-primary" href="#/">
           Start exploring
